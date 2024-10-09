@@ -1,0 +1,124 @@
+footer {
+  h3 {
+    font-family: Inter;
+  }
+  p {
+    font-family: Inter;
+  }
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
+  .footer-cards {
+    padding: 100px 0px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .first {
+    width: 376px;
+
+    .contact {
+      padding-top: 10px;
+      display: flex;
+      gap: 26px;
+    }
+  }
+  .footer-card {
+    display: flex;
+
+    gap: 20px;
+    flex-direction: column;
+    h3 {
+      padding-bottom: 8px;
+      font-weight: 550;
+    }
+    p {
+      padding-top: 16px;
+      span {
+        font-weight: 550;
+      }
+    }
+    input {
+      padding-left: 24px;
+      border: 1px solid $blue;
+      border-radius: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    input::placeholder {
+      color: $blue;
+    }
+    .footer-button {
+      background-color: $blue;
+      @include buttons;
+      box-shadow: 0 0 2px $blue;
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-family: Fira Code;
+      font-size: 20.26px;
+      font-weight: 500;
+      line-height: 24.55px;
+      letter-spacing: -0.06em;
+      text-align: left;
+      font-size: 24px;
+      span {
+        color: $blue;
+      }
+    }
+    .bottom-c {
+      display: flex;
+      gap: 4px;
+      p {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: 1320px) {
+  .container {
+    padding: 0px 100px !important;
+  }
+  footer {
+    padding: 0 50px;
+    .footer-cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .container {
+    padding: 0px 20px !important;
+  }
+  footer {
+    .footer-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      justify-content: center;
+      .footer-card {
+        text-align: center;
+        align-items: center;
+        input {
+          width: 70%;
+        }
+        button {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

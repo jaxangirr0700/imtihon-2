@@ -1,0 +1,456 @@
+.fira-code-text {
+  padding-top: 150px;
+
+  font-family: Fira Code;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.06em;
+  text-align: left;
+}
+.sec-one {
+  .item-end {
+    display: flex;
+    justify-content: end;
+    a {
+      color: $blue;
+      font-family: Inter;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+  .one-cards {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    .card-info {
+      width: 354px;
+      height: 246px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 3px lightgray;
+      padding: 35px;
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+      &:active {
+        transform: scale(1);
+        transition: 0.2s;
+      }
+
+      h3 {
+        font-family: Fira Code;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 52px;
+        letter-spacing: -0.06em;
+        text-align: left;
+      }
+      p {
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        opacity: 0.7;
+      }
+    }
+  }
+  //   .card-info-kurslar {
+  //     width: 482px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     gap: 20px;
+  //     h1 {
+  //     }
+  //   }
+  .card-info-kurslar {
+    width: 482px;
+    height: 600px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    padding: 35px;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+
+    h3 {
+      padding-top: 13px;
+      padding-bottom: 8px;
+      font-family: Fira Code;
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 52px;
+      letter-spacing: -0.06em;
+      text-align: left;
+    }
+    p {
+      padding-top: 15px;
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 34px;
+      text-align: center;
+      opacity: 0.7;
+      span {
+        color: $blue;
+      }
+    }
+    .kurslar-btn {
+      margin-top: 24px !important;
+    }
+
+    .buttons {
+      @include buttons;
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+  .beckend {
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 354px;
+
+    height: 480px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: start;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+    img {
+      width: 100%;
+    }
+    h3 {
+      padding-top: 10px;
+
+      font-family: Fira Code;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 52px;
+      letter-spacing: -0.06em;
+      text-align: left;
+    }
+    p {
+      padding: 10px;
+      padding-top: 10px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 34px;
+      text-align: left;
+      opacity: 0.7;
+      span {
+        color: $blue;
+      }
+    }
+    .kurslar-btn {
+      margin-top: 10px !important;
+    }
+
+    .buttons {
+      @include buttons;
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+  .group {
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 354px;
+
+    height: 480px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+    img {
+      padding-top: 30px;
+      border-radius: 50%;
+      width: 50%;
+    }
+    h3 {
+      padding-top: 10px;
+
+      font-family: Fira Code;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 52px;
+      letter-spacing: -0.06em;
+      text-align: center;
+    }
+    p {
+      padding: 10px;
+      padding-top: 10px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 34px;
+      text-align: center;
+      opacity: 0.7;
+      span {
+        color: $blue;
+      }
+    }
+    .contact {
+      display: flex;
+      gap: 15px;
+      img {
+        width: 30px;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          box-shadow: 0 0 20px gray;
+        }
+      }
+    }
+  }
+  .sertifikat {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    align-items: center;
+    border-radius: 10px;
+    img {
+      width: 50%;
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+      &:active {
+        transform: scale(1);
+        transition: 0.2s;
+      }
+    }
+    .sertifikat-title {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      width: 40%;
+
+      h3 {
+        font-family: Fira Code;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 52px;
+        letter-spacing: -0.06em;
+        text-align: left;
+      }
+      p {
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.sec-two {
+  .two {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    .two-imgs {
+      max-width: 40%;
+      display: flex;
+      gap: 20px;
+      img {
+        max-width: 40%;
+      }
+      .bratla {
+        transform: translateY(-40px);
+      }
+    }
+    .two-title {
+      max-width: 40%;
+
+      h3 {
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: left;
+      }
+      p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: 1110px) {
+  .sec-one {
+    .fira-code-text {
+      text-align: center;
+    }
+    .one-cards {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  .sec-two {
+    .fira-code-text {
+      text-align: center;
+    }
+    text-align: center;
+    align-items: center;
+    .two {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  .sec-two {
+    .two {
+      .two-imgs {
+        max-width: 400px;
+
+        img {
+        }
+      }
+    }
+  }
+}
+.sertifikat {
+  img {
+    width: 400px;
+  }
+}
+@media (max-width: 786px) {
+
+  .sec-two {
+    .two {
+      .two-imgs {
+        max-width: 350px;
+
+        img {
+        }
+      }
+      .two-title {
+        width: 350px;
+   h3{
+    width: 200px;
+   }
+        p{
+            font-size: 13px;
+        }
+      }
+    }
+  }
+  .sec-one {
+    .fira-code-text {
+      font-size: 24px;
+    }
+    .item-end {
+      align-items: center;
+      justify-content: center;
+    }
+    .one-cards {
+      .card-info {
+        width: 280px;
+      }
+      .card-info-kurslar {
+        width: 300px;
+
+        padding: 25px;
+
+        h3 {
+          padding-top: 10px;
+          padding-bottom: 5px;
+
+          font-size: 24px;
+        }
+        p {
+          padding-top: 10px;
+
+          font-size: 16px;
+        }
+        .kurslar-btn {
+          margin-top: 10px !important;
+        }
+      }
+      .beckend {
+        width: 290px;
+      }
+
+      .group {
+        width: 290px;
+      }
+      .sertifikat {
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px;
+        img {
+          width: 70%;
+        }
+        .sertifikat-title {
+          max-width: 40%;
+
+          h3 {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            text-align: left;
+          }
+          p {
+            font-family: Inter;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

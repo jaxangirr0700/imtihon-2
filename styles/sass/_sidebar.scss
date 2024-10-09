@@ -1,0 +1,93 @@
+@import "veriables";
+.theme-toggle {
+    position: absolute;
+    left: -50px;
+}
+#checkbox {
+  display: none;
+}
+.phone {
+  display: none;
+  .logo {
+    width: 10%;
+  }
+}
+
+@media (max-width: 888px) {
+  
+  header {
+    padding: 0px 0px;
+  }
+
+  .navv {
+    display: none;
+  }
+
+  #checkbox[type="checkbox"]:checked + .sidebar {
+    transform: translatey(0);
+  }
+  .phone {
+    background-color: rgb(53, 56, 121);
+
+    .burger {
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center;
+      label {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    #checkbox {
+      display: none;
+    }
+    display: block;
+    .labbel {
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .uls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        button {
+          padding: 10px 50px;
+          color: $blue;
+          border: 3px solid transparent;
+          background-color: $white;
+          border-radius: 10px;
+          box-shadow: 0px 0px 5px $blue;
+          &:hover {
+            background-color: $blue;
+            border: 3px solid $blue;
+            color: $white;
+          }
+        }
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+    .sidebar {
+      padding-top: 20px;
+      transform: translatey(-200%);
+      height: 100vh;
+      width: 100%;
+
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      transition: 1.5s;
+      background-color: lightblue;
+    }
+  }
+}
